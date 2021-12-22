@@ -1,0 +1,36 @@
+ClevelandBot v4 Complete Changelog
+
+MAJOR:
+
+• Customizable prefix for each server
+• Fewer (hopefully no) crashes on export loads
+• Renamed -splits, now more intuitive... "-lX player name" (where X is the number of recent games you want to see stats from)... for example run -l10 Alex walker to get Alex Walker's last 10 games. Previously this would be -splits Alex walker, l10. The functionality to look at someone's first X games is gone, but this was basically never used outside the testing phase
+• The arrows have been removed on the -roster page, and have been replaced by a new -sroster command. -roster for historic teams still automatically shows stats
+• -history page for teams has received a total revamp, now showing overall, best, and worst records, playoff appearances/titles, the top 5 players for that franchise by EWA, retired jerseys, and their last 15 season results.
+• New -seasons command to see the the result from each season for said franchise. May take multiple messages due to Discord's character limits.
+• Added new -tstats command (-ptstats for playoffs) that shows 10 team stats and their ranks league-wide.
+• Revamp of the -sos command, now showing SOS for past games, future games, and overall. 
+• Refreshed -fa with two lists, one sorted by OVR and one by POT. Also, added tags/skills.
+• Added -pr (power rankings) command, shows top 10, sorted by a mix of team rating, overall record, and last 10 games.
+• New -matchups command, which shows game results between two teams. Includes records at the time, the score, the top performer for the winning team, game-winning or tying baskets if there were any, and injured players if any.
+• Finally a proper -help screen
+
+OTHER:
+• Player commands (stats, ratings, etc) that call on previous seasons show any awards the player earned that season
+• Running a player command by itself (not providing a player or season) shows a random player each time, rather than the highest OVR player.
+• Improved player search - fixed finding Jr. and Sr. players separately (but you may need to put the period after jr or sr)
+• Fixed bugs where players with numbers in their names would have that number interpreted as part of the season you were trying to look up
+• Added TS% to -stats screen (it also remains on -adv)
+• Playoff stats can now be accessed with the -pstats command rather than the regular -stats and then clicking the arrow. This also applies for -adv... you can get playoff advanced stats with -padv
+• Moved the tags (3 A Dp etc) to a new location in -ratings, cleans up the screen a bit
+• Renamed "Efficiency" to "Team-Based" on the -adv screen (big moves)
+• You can use -progs or -proghistory to get prog history now... previously it was just -proghistory, which could be a hassle to type on mobile
+• Simplified the line that shows where the player was picked on -proghistory
+• Updated -compare screen with position of comparison and more detailed stats
+• Stats on rosters are more detailed, including blocks and steals
+• Upped the 13 player limit to 15 on current rosters. Lowered it to 10 for stat rosters due to more stats taking up more characters
+• Added playoff team ratings to roster pages
+• Moved payroll and salary cap up above the roster on the normal roster screen, next to team ratings
+• Scrapped -pyramid command, I think it was often misleading or straight up inaccurate.
+• -draft now shows the actual draft order for past seasons, rather than just the top prospects list. 
+• Top prospects list for future draft now includes 20 players instead of 10, nicer formatting, and player tags.
